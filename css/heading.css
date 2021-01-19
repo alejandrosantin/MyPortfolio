@@ -20,7 +20,11 @@
 }
 
 #animation {
-    background-image: url('/assets/img/kungfu.gif')
+    background-image: url('/assets/img/50ex.txt');
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #skill {
