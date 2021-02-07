@@ -1,8 +1,7 @@
 const proyectos = document.querySelector('.proyecto').addEventListener('click', cargarJSON);
-// const skillsSection = document.getElementById('skillSec').addEventListener('DOMContentLoaded', cargarSkills);
 
 function cargarJSON() {
-    fetch('proyectos.json')
+    fetch('../proyectos.json')
         .then(res => res.json())
         .then(data => {
             let html = '';
@@ -15,7 +14,7 @@ function cargarJSON() {
                         </li>
                         `
             })
-            html += '<button id="btnX" class="btn btn-primary animate__animated animate__zoomIn animate__slower	3s">⇑</button><br>' //<img class="img-fluid rounded" src="../assets/img/right-up-arrow.png"/>
+            html += '<button id="btnX" class="btn btn-primary animate__animated animate__zoomIn animate__slower	3s"><img id="flecha" class="img-fluid rounded" src="../assets/img/right-up-arrow.png"/></button><br>' //<img class="img-fluid rounded" src="../assets/img/right-up-arrow.png"/>
             document.getElementById('resultado').innerHTML = html;
             const quitar = document.getElementById('btnX').addEventListener('click', quitarProyectos);
 
@@ -25,20 +24,20 @@ function cargarJSON() {
         })
         .catch(error => console.log(error))
 }
-//Muestra el nombre del skill al pasarle por encima con el mouse
-// function cargarSkills() {
-//     fetch('skills.json')
-//         .then(res => res.json())
-//         .then(data => {
-//             let html = '';
-//             data.forEach(skill => {
-//                 console.log(skill.name)
-//                 html += `
-//                     <p>${skill.name}</p>
-//                     <img class="img-fluid rounded mb-5 html" src=${skill.img}" alt="html">
-//                 `
-//             })
-//             document.querySelector('skillSec').innerHTML = html;
-//         })
-//         .catch(error => console.log(error))
-// }
+
+function cargarSkills() {
+    fetch('../skills.json')
+        .then(res => res.json())
+        .then(data => {
+            let html = '';
+            data.forEach(skill => {                         
+                html += `                
+                    <a>${skill.name}</a>
+                `
+            })
+            document.getElementById('result').innerHTML = html;
+        })
+        .catch(error => console.log(error))
+}
+
+// cargarSkills();

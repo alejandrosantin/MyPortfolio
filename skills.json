@@ -1,6 +1,17 @@
-[
-    {
+[{
         "name": "html",
+        "img": "./assets/img/skills/html.svg"
+    },
+    {
+        "name": "css",
+        "img": "assets/img/skills/html.svg"
+    },
+    {
+        "name": "JavaScript",
+        "img": "assets/img/skills/html.svg"
+    },
+    {
+        "name": "Bootstrap",
         "img": "assets/img/skills/html.svg"
     }
 ]
