@@ -52,5 +52,10 @@
         "nombre": "GiffExpertApp",
         "link": "https://kungfucoding23.github.io/GiffExpertApp/",
         "desc": "Aplicación hecha con React para buscar gifs con la API Giphy"
+    },
+    {
+        "nombre": "Microblog",
+        "link": "https://microblog-front.kungfucoding23.vercel.app/",
+        "desc": "Proyecto realizado con Golang para el backend y React para el frontend, es una red social al estilo tweeter"
     }
 ]
