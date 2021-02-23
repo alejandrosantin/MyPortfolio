@@ -14,7 +14,7 @@ function cargarJSON() {
                         </li>
                         `
             })
-            html += '<button id="btnX" class="btn btn-primary animate__animated animate__zoomIn animate__slower	3s"><img id="flecha" class="img-fluid rounded" src="../assets/img/right-up-arrow.png"/></button><br>' //<img class="img-fluid rounded" src="../assets/img/right-up-arrow.png"/>
+            html += '<button id="btnX" class="btn btn-primary animate__animated animate__zoomIn animate__slower	3s"><i class="fas fa-backward"></i></button><br>' //<img class="img-fluid rounded" src="../assets/img/right-up-arrow.png"/>
             document.getElementById('resultado').innerHTML = html;
             const quitar = document.getElementById('btnX').addEventListener('click', quitarProyectos);
 
